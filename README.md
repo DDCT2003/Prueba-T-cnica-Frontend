@@ -38,13 +38,15 @@ Aplicación web fullstack compuesta por dos repositorios:
 
 2. **Compila el proyecto:**
 
+   Dentro del directorio del proyecto ejecuta la siguiente linea:
+
    ```bash
    mvn clean package
    ```
 
     Esto descargará todas las dependencias necesarias y generará el archivo JAR en la carpeta `target/`.
 
-3. **Ejecuta el backend:**
+4. **Ejecuta el backend:**
 
     ```bash
     java -jar target/picoyplaca_backend-*.jar
