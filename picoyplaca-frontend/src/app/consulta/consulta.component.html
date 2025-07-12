@@ -1,0 +1,29 @@
+<div class="container">
+  <h2>Pico y Placa - Consulta</h2>
+  <form (ngSubmit)="consultar()" #consultaForm="ngForm">
+    <div>
+      <label for="placa">Placa:</label>
+      <input type="text" id="placa" name="placa"
+             [(ngModel)]="placa"
+             required
+             pattern="[A-Z]{3}[0-9]{3,4}"
+             placeholder="Ej: ABC1234">
+    </div>
+    <div>
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha" [(ngModel)]="fecha" required>
+    </div>
+    <div>
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" name="hora" [(ngModel)]="hora" required>
+    </div>
+    
+    <button type="submit" [disabled]="!consultaForm.form.valid" class="btn-consultar">Consultar</button>
+  </form>
+
+  <div *ngIf="respuesta" [ngClass]="respuesta.puedeCircular ? 'result ok' : 'result fail'">
+    <h3>Resultado</h3>
+    <p><strong>Placa:</strong> {{respuesta.placa}}</p>
+    <p>{{respuesta.mensaje}}</p>
+  </div>
+</div>

@@ -1,0 +1,85 @@
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #f6f7fb;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(44, 62, 80, 0.12);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #3867d6;
+  margin-bottom: 28px;
+}
+
+form > div {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #222f3e;
+  font-weight: 500;
+}
+
+input[type="text"], input[type="date"], input[type="time"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c8d6e5;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.3s;
+  font-size: 1rem;
+}
+
+input:focus {
+  border: 1.5px solid #3867d6;
+}
+
+.btn-consultar {
+  width: 100%;
+  background: #3867d6;
+  color: #fff;
+  padding: 12px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.btn-consultar:disabled {
+  background: #8395a7;
+  cursor: not-allowed;
+}
+
+h3 {
+  margin-top: 32px;
+  color: #222f3e;
+  text-align: center;
+}
+
+.result {
+  padding: 18px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.result.ok {
+  background: #dff9fb;
+  color: #22a06b;
+  border: 1.5px solid #22a06b;
+}
+
+.result.fail {
+  background: #fceaea;
+  color: #c0392b;
+  border: 1.5px solid #c0392b;
+}
