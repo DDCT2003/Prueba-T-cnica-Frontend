@@ -39,7 +39,7 @@ Aplicación web fullstack compuesta por dos repositorios:
 2. **Compila el proyecto:**
 
    ```bash
-        mvn clean package
+   mvn clean package
    ```
 
     Esto descargará todas las dependencias necesarias y generará el archivo JAR en la carpeta `target/`.
@@ -92,9 +92,9 @@ La respuesta será un JSON indicando si el vehículo puede circular o no.
 
 2. **Instala las dependencias:**
 
-       ```bash
-            npm install
-       ```
+   ```bash
+     npm install
+   ```
     
 
 4. **Inicia el servidor de desarrollo:**
